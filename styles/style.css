@@ -1,0 +1,143 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 15%;
+    height: 100vh;
+    background-color: #222222;
+    float: left;
+}
+
+#game-field {
+    display: block;
+    float: left;
+    width: 85%;
+    height: 100vh;
+    background-color: #444444;
+}
+
+a.btn {
+    display: block;
+    width: 65%;
+    background-color: white;
+    color: black;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 10px;
+    transition: all 0.3s ease;
+    /* disable text selection highlighting on a button */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, supported by Chrome, Edge, Opera and Firefox */
+}
+
+a.btn:nth-child(3) {
+    margin-bottom: 20px;
+}
+
+a.btn:nth-child(1) {
+    margin-top: 40px;
+}
+
+a.btn.disabled {
+    background-color: gray;
+}
+
+a.btn.disabled:hover {
+    transform: none;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+a.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px white;
+}
+
+h2 {
+    display: block;
+    float: left;
+    color: white;
+    margin: 40px 0 10px 0;
+    width: 50%;
+    height: 1.5em;
+    text-align: center;
+}
+
+h2.masts-count {
+    margin: 10px 0 40px 0;
+    font-size: 1.25em;
+}
+
+h3 {
+    display: block;
+    width: 100%;
+    color: white;
+    margin: 40px 0 0 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid black;
+    font-weight: bold;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, supported by Chrome, Edge, Opera and Firefox */
+}
+
+.mast {
+    background-color: rgb(1, 76, 216);
+}
+
+.menu-mast {
+    float: left;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.menu-wrapper {
+    margin-top: 10px;
+    background-color: gray;
+}
+
+.menu-wrapper-active {
+    background-color: rgb(1, 76, 216) !important;
+}
+
+.highlighted-green {
+    background-color: rgb(0, 150, 0);
+}
+
+.highlighted-red {
+    background-color: rgb(150, 0, 0);
+}
